@@ -1,8 +1,5 @@
 package ru.inno.ssdlab06;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -10,6 +7,8 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import java.io.*;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestCurrencyConverter {
 
@@ -34,7 +33,7 @@ public class TestCurrencyConverter {
      // Main.main(null);
 
      assertTrue(isGreaterThanOne);
-     assertTrue(isLessThanTwenty);
+     assertFalse(isLessThanTwenty);
 
      // assertion
      // assertEquals("Hello world!\n", bos.toString());
