@@ -1,7 +1,7 @@
 package ru.inno.ssdlab06;
 
 public enum Currency {
-    RUBLE(1),
+    ROUBLE(1),
     EURO(180),
     DOLLAR(120),
     BITCOIN(30000*120),
@@ -12,7 +12,7 @@ public enum Currency {
     }
     public static Currency getCurrency(String currency){
         switch (currency){
-            case "ruble": return Currency.RUBLE;
+            case "rouble": return Currency.ROUBLE;
             case "usd": return Currency.DOLLAR;
             case "euro": return Currency.EURO;
             case "btc": return Currency.BITCOIN;
